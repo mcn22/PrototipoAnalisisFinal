@@ -73,16 +73,7 @@ $(document).ready(function() {
         <a href="index.html"><img class="mobile-logo" src="../assets/img/gym-logo.png" alt="Gym"></a>
             <ul class="nav navbar-nav navbar-right menu">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="classes.html">Classes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="trainers.html">Trainers</a>
+                    <a class="nav-link" href="../index.html">Home</a>
                 </li>
                 <li class="dropdown">
                         <a>Acceso</a>
@@ -110,15 +101,28 @@ $(document).ready(function() {
                 <li class="dropdown">
                     <a>Administrador</a>
                     <ul class="sub_menu">
-                        <li><a href="../Administrador/HUM3-001.html">Administrar usuarios</a></li>
-                        <li><a href="single-blog.html">Single Blog</a></li>
+                    <li><a href="../Administrador/HUM3-001.html">Administrar usuarios</a></li>
+                    <li><a href="../Administrador/HUM3-002.html">Administrar muro</a></li>
+                    <li><a href="../Administrador/HUM3-003.html">Informar usuarios</a></li>
+                    <li><a href="../Administrador/HUM3-004.html">Administrar reportes</a></li>
+                    <li><a href="../Administrador/HUM3-005-1.html">Crear cuenta usuario</a></li>
+                    <li><a href="../Administrador/HUM3-005-2.html">Editar cuentas</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link section-button btn btn-effect text-uppercase font-14 para-color" href="pricing-table.html">Become a Member</a>
+                <li class="dropdown">
+                    <a>Pagos</a>
+                    <ul class="sub_menu">
+                    <li><a href="../Pagos/HUMP-0011.html">Asignar membresía</a></li>
+                    <li><a href="../Pagos/HUMP-0012.html">Ingresar cliente a facturación</a></li>
+                    <li><a href="../Pagos/HUMP-0013.html">Crear pago</a></li>
+                    <li><a href="../Pagos/HUMP-0014.html">Aplicar pago</a></li>
+                    <li><a href="../Pagos/HUMP-0015.html">Crear nota de crédito</a></li>
+                    <li><a href="../Pagos/HUMP-0015.html">Crear nota de débito</a></li>
+                    <li><a href="../Pagos/HUMP-0031.html">Balance inicial</a></li>
+                    <li><a href="../Pagos/HUMP-0032.html">Arqueo de caja</a></li>
+                    <li><a href="../Pagos/HUMP-0041.html">Establecer balance</a></li>
+                    <li><a href="../Pagos/HUMP-0042.html">Modificar balance</a></li>
+                    </ul>
                 </li>
             </ul>
     `
