@@ -61,6 +61,20 @@ $(document).ready(function() {
                     <li><a href="../Pagos/HUMP-0042.html">Modificar balance</a></li>
                 </ul>
             </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Empleado<i class="fas fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="../Empleado/HUEM-001.html">Modificar empleado</a></li>
+                <li><a href="../Empleado/HUEM-002.html">Crear dieta</a></li>
+                <li><a href="../Empleado/HUEM-002-01.html">Modificar dieta</a></li>
+                <li><a href="../Empleado/HUEM-003.html">Crear rutina</a></li>
+                <li><a href="../Empleado/HUEM-003-1.html">Modificar rutina</a></li>
+                <li><a href="../Empleado/HUEM-004.html">Ver calendario</a></li>
+                <li><a href="../Empleado/HUEM-005.html">Crear Métricas</a></li>
+                <li><a href="../Empleado/HUEM-005-1.html">Modificar Métricas</a></li>
+                <li><a href="../Empleado/HUEM-006.html">Historial cliente</a></li>
+            </ul>
+        </li>
         </ul>
     </div>
 </div>
@@ -124,6 +138,20 @@ $(document).ready(function() {
                     <li><a href="../Pagos/HUMP-0042.html">Modificar balance</a></li>
                     </ul>
                 </li>
+                <li class="dropdown">
+                    <a>Pagos</a>
+                    <ul class="sub_menu">
+                    <li><a href="../Empleado/HUEM-001.html">Modificar empleado</a></li>
+                    <li><a href="../Empleado/HUEM-002.html">Crear dieta</a></li>
+                    <li><a href="../Empleado/HUEM-002-01.html">Modificar dieta</a></li>
+                    <li><a href="../Empleado/HUEM-003.html">Crear rutina</a></li>
+                    <li><a href="../Empleado/HUEM-003-1.html">Modificar rutina</a></li>
+                    <li><a href="../Empleado/HUEM-004.html">Ver calendario</a></li>
+                    <li><a href="../Empleado/HUEM-005.html">Crear Métricas</a></li>
+                    <li><a href="../Empleado/HUEM-005-1.html">Modificar Métricas</a></li>
+                    <li><a href="../Empleado/HUEM-006.html">Historial cliente</a></li>
+                    </ul>
+            </li>
             </ul>
     `
         document.getElementById('navegacionMobile').innerHTML = htmlmenuMobile;
