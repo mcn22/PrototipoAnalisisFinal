@@ -62,7 +62,9 @@
 
 /* Use font link */
 
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+
 
 /* Use style sheet */
 
@@ -100,7 +102,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   overflow-x: hidden!important;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 p {
