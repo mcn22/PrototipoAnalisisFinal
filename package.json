@@ -1,0 +1,26 @@
+{
+  "name": "energym",
+  "version": "1.0.0",
+  "description": "To develop the gym project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcn22/PrototipoAnalisisFinal.git"
+  },
+  "author": "Maiky R / Mario S / Tyrone Z / Eddison S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcn22/PrototipoAnalisisFinal/issues"
+  },
+  "homepage": "https://github.com/mcn22/PrototipoAnalisisFinal#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-middleware": "^3.4.2",
+    "mongoose": "^5.12.8"
+  }
+}
