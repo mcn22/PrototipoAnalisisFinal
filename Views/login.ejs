@@ -15,8 +15,9 @@
     ===========================================-->
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
 
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet" >
     <!-- FAVICONS -->
     <link rel="icon" href="img/favicon-16x16.png" type="image/png" sizes="16x16">
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
@@ -73,9 +74,10 @@
 
                 <div class="row">
                     <!-- Membership Form Area Start-->
+
                     <div class="col-sm-12">
                         <div class="leave-comment-area get-membership-form">
-                            <form action="#">
+                            <form action="/login" method="POST">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group para-color font-17">
@@ -107,6 +109,14 @@
                                     <br>
                                     <br>
                                     <br>
+                                    <div class="card social-block" style="margin: 0 auto; width:35%;">
+                                      <div class="card-body">
+                                        <a class="btn btn-block btn-lg btn-google" href="/auth/google" role="button">
+                                          <i class="fab fa-google"></i>
+                                          Google
+                                        </a>
+                                      </div>
+                                    </div>
                                     <br>
                                     <br>
                                     <br>

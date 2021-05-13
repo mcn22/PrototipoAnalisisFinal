@@ -1,11 +1,21 @@
 const mongoose = require('mongoose');
-mongoose.set('useCreateIndex', true);
+const passport = require('passport');
+const passportLocalMongoose = require('passport-local-mongoose');
+const findOrCreate = require('mongoose-findorcreate');
+// mongoose.set('useCreateIndex', true);
 
 const CustomerSchema = new mongoose.Schema({
-  Id:Integer,
-  Name: String
+  email:String,
+  password:String,
+  googleId:String
 }, {timestamps: true});
 
+CustomerSchema.plugin(passportLocalMongoose);
+CustomerSchema.plugin(findOrCreate);
+
 var Customer = mongoose.model("Customer", CustomerSchema);
+passport.use(Customer.createStrategy());
+
+
 
 module.exports = Customer;
