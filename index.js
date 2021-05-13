@@ -63,6 +63,8 @@ const loginRoute = require("./Controller/loginRoute");
 
 app.use("/login", loginRoute);
 
+//URL Directions
+
 app.get("/", middleware.requireLogin, function(req, res, next){
   res.status(200).render("home");
 });
