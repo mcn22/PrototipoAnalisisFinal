@@ -17,7 +17,7 @@ var htmlmenuDesktop = `
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown">Acceso<i class="fas fa-angle-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="/login">Login</a></li>
-                    <li><a href="Acceso/register.html">Registro</a></li>
+                    <li><a href="/register">Registro</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -108,8 +108,8 @@ $(document).ready(function() {
         <li class="dropdown">
             <a>Acceso</a>
             <ul class="sub_menu">
-                <li><a href="Acceso/login.html">Login</a></li>
-                <li><a href="Acceso/register.html">Registro</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Registro</a></li>
             </ul>
         </li>
         <li class="dropdown">

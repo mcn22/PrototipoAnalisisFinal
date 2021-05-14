@@ -5,9 +5,16 @@ const findOrCreate = require('mongoose-findorcreate');
 // mongoose.set('useCreateIndex', true);
 
 const CustomerSchema = new mongoose.Schema({
-  email:String,
+  email:{type:String,unique:true},
   password:String,
-  googleId:String
+  googleId:String,
+  fName:String,
+  lName:String,
+  birthDate:Date,
+  phone:String,
+  province:String,
+  postalCode:String,
+  address:String
 }, {timestamps: true});
 
 CustomerSchema.plugin(passportLocalMongoose);

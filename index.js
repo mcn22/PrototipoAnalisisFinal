@@ -31,7 +31,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-
+passport.use(User.createStrategy());
 
 passport.serializeUser(function(user, done) {
   done(null, user.id);
@@ -60,8 +60,10 @@ passport.use(new GoogleStrategy({
 //Routes
 
 const loginRoute = require("./Controller/loginRoute");
+const registerRoute = require("./Controller/registerRoute");
 
 app.use("/login", loginRoute);
+app.use("/register", registerRoute);
 
 //URL Directions
 
