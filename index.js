@@ -13,10 +13,9 @@ const User = require(__dirname + "/Model/cliente.js");
 const app = express();
 
 
+app.use(express.static(__dirname + "/public"));
 
 app.set('view engine', 'ejs');
-
-app.use(express.static(__dirname + "/public"));
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -82,7 +81,11 @@ app.get("/home", middleware.requireLogin, function(req, res, next){
   res.status(200).render("home");
 });
 
+//Testing the session
 
+
+
+//Port Number to host app
 app.listen(process.env.PORT ||"3000", function(req,res){
-  console.log("Listening to port 3000")
+  console.log("Listening to port 3000");
 });

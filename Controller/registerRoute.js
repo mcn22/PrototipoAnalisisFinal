@@ -17,27 +17,6 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + "/public"));
 
-// app.use(session({
-//   secret:process.env.SECRET,
-//   resave:false,
-//   saveUninitialized:false
-// }));
-//
-// app.use(passport.initialize());
-// app.use(passport.session());
-//
-// passport.use(Customer.createStrategy());
-//
-// passport.serializeUser(function(user, done) {
-//   done(null, user.id);
-// });
-//
-// passport.deserializeUser(function(id, done) {
-//   User.findById(id, function(err, user) {
-//     done(err, user);
-//   });
-// });
-
 router.get("/", (req, res, next) => {
     res.status(200).render("register");
 });
@@ -45,8 +24,8 @@ router.get("/", (req, res, next) => {
 router.post("/", (req,res,next) => {
 
   var newCustomer = new Customer({
-    username:req.body.email,
-    email:req.body.email,
+    username:req.body.username,
+    email:req.body.username,
     fName:req.body.fName,
     lName:req.body.lName,
     phone:req.body.phone,
@@ -60,15 +39,24 @@ router.post("/", (req,res,next) => {
     if (err) {
       console.log(err); //Add this to the log error process
       return res.render("register");
+    }else{
+      console.log("entre a autenticar passport");
+      passport.authenticate("local")(req,res,function(){
+        res.redirect("home");
+      });
     }
     // go to the next middleware
-    next();
+    // next();
 
   });
-}, passport.authenticate('local', {
 
-                 successRedirect: '/home',
-                 failureRedirect: '/login'
-  }));
+});
+// }, passport.authenticate('local', {
+//
+//                  successRedirect: '/home',
+//                  failureRedirect: '/login'
+//   }));
+
+
 
   module.exports = router;
