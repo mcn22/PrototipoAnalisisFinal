@@ -40,7 +40,7 @@ router.post("/", (req,res,next) => {
       console.log(err); //Add this to the log error process
       return res.render("register");
     }else{
-      console.log("entre a autenticar passport");
+  
       passport.authenticate("local")(req,res,function(){
         res.redirect("home");
       });
