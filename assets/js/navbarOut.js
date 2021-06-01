@@ -3,7 +3,7 @@
 $(document).ready(function () {
 var htmlmenuDesktop = `
 <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="img/gym-logo.png" alt="gym logo"></a>
+    <a class="navbar-brand" href="index.html"><img src="assets/img/gym-logo.png" alt="gym logo"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
